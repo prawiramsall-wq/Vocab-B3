@@ -155,7 +155,54 @@ font-weight:bold;
 margin-top:20px;
 color:#666;
 }
+.word-bank{
+background:white;
+padding:25px;
+border-radius:20px;
+margin-bottom:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
 
+.word-bank h2{
+text-align:center;
+color:#0a4d8f;
+margin-bottom:20px;
+}
+
+.word-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.word-item{
+background:#eef5ff;
+border:2px solid #d8e9ff;
+border-radius:12px;
+padding:10px 15px;
+min-width:120px;
+text-align:center;
+transition:.3s;
+}
+
+.word-item:hover{
+transform:translateY(-2px);
+border-color:#0a66c2;
+}
+
+.word{
+font-size:16px;
+font-weight:700;
+color:#0a4d8f;
+}
+
+.phonetic{
+font-size:12px;
+margin-top:4px;
+color:#666;
+font-style:italic;
+}
 </style>
 </head>
 <body>
@@ -166,7 +213,90 @@ color:#666;
 <h1>Household Objects Vocabulary Challenge</h1>
 <p>Look at each picture and type the correct English word.</p>
 </div>
+<div class="word-bank">
 
+<h2>📚 Word Bank</h2>
+
+<div class="word-list">
+
+<div class="word-item">
+<div class="word">bed</div>
+<div class="phonetic">/bed/</div>
+</div>
+
+<div class="word-item">
+<div class="word">blanket</div>
+<div class="phonetic">/ˈblæŋ.kɪt/</div>
+</div>
+
+<div class="word-item">
+<div class="word">chair</div>
+<div class="phonetic">/tʃer/</div>
+</div>
+
+<div class="word-item">
+<div class="word">clock</div>
+<div class="phonetic">/klɑːk/</div>
+</div>
+
+<div class="word-item">
+<div class="word">cupboard</div>
+<div class="phonetic">/ˈkʌb.ɚd/</div>
+</div>
+
+<div class="word-item">
+<div class="word">door</div>
+<div class="phonetic">/dɔːr/</div>
+</div>
+
+<div class="word-item">
+<div class="word">fan</div>
+<div class="phonetic">/fæn/</div>
+</div>
+
+<div class="word-item">
+<div class="word">lamp</div>
+<div class="phonetic">/læmp/</div>
+</div>
+
+<div class="word-item">
+<div class="word">mirror</div>
+<div class="phonetic">/ˈmɪr.ɚ/</div>
+</div>
+
+<div class="word-item">
+<div class="word">pillow</div>
+<div class="phonetic">/ˈpɪl.oʊ/</div>
+</div>
+
+<div class="word-item">
+<div class="word">refrigerator</div>
+<div class="phonetic">/rɪˈfrɪdʒ.ə.reɪ.t̬ɚ/</div>
+</div>
+
+<div class="word-item">
+<div class="word">sofa</div>
+<div class="phonetic">/ˈsoʊ.fə/</div>
+</div>
+
+<div class="word-item">
+<div class="word">table</div>
+<div class="phonetic">/ˈteɪ.bəl/</div>
+</div>
+
+<div class="word-item">
+<div class="word">television</div>
+<div class="phonetic">/ˈtel.əˌvɪʒ.ən/</div>
+</div>
+
+<div class="word-item">
+<div class="word">window</div>
+<div class="phonetic">/ˈwɪn.doʊ/</div>
+</div>
+
+</div>
+
+</div>
 <form id="quizForm"></form>
 
 <button onclick="checkAnswers()">Submit Answers</button>
